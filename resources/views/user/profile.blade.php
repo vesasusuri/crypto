@@ -17,7 +17,7 @@
                             <div class="d-flex flex-column align-items-center text-center">    
                             <img src="admin/assets/images/faces/face3.jpg" alt="Admin" class="rounded-circle" width="150">
                                 <div class="mt-3">
-                                    Vesa Susuri                                     
+                                     {{Auth::user()->name}}                                    
                                 </div>
                             </div>
                         </div>
@@ -31,7 +31,7 @@
                             <h6 class="mb-0">Full Name</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                            vesa susuri                        
+                            {{Auth::user()->name}}                      
                         </div>
                     </div>
                     <hr>
@@ -40,7 +40,7 @@
                         <h6 class="mb-0">Email</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                        vesasusuri@gmail.com
+                            {{Auth::user()->email}}
                         </div>
                     </div>
                     <hr>
@@ -49,7 +49,7 @@
                         <h6 class="mb-0">Status</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                            Active
+                            {{Auth::user()->status}}
                         </div>
                     </div>
                     <hr>
@@ -58,7 +58,7 @@
                         <h6 class="mb-0">Country</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                            Kosova
+                           {{Auth::user()->country}}
                         </div>
                     </div>
                     <hr>
@@ -67,7 +67,7 @@
                         <h6 class="mb-0">Address</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                            Prizren
+                          {{Auth::user()->address}}
                         </div>
                     </div>
                     <hr>
@@ -76,7 +76,7 @@
                         <h6 class="mb-0">Hash</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                            1234
+                            {{Auth::user()->hash}}
                         </div>
                     </div>
                     <hr>
@@ -85,7 +85,7 @@
                         <h6 class="mb-0">Bank</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                            Bkt
+                            {{Auth::user()->bank}}
                         </div>
                     </div>
                     <hr>

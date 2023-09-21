@@ -14,10 +14,9 @@
                   <span class="count bg-success"></span>
                 </div>
                 <div class="profile-name">
-                  <h5 class="mb-0 font-weight-normal">Vesa</h5>
+                  <h5 class="mb-0 font-weight-normal"> {{Auth::user()->name}}</h5>
                 </div>
               </div>
-              <a href="#" id="profile-dropdown" data-bs-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
               <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
                
                
@@ -76,11 +75,11 @@
           </li>
 
           <li class="nav-item menu-items">
-            <a class="nav-link" href="{{url('showappointment')}}">
+            <a class="nav-link" href="{{url('transaction')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-file-document-box"></i>
               </span>
-              <span class="menu-title">Transfer</span>
+              <span class="menu-title">Transaction</span>
             </a>
           </li>
 
@@ -89,18 +88,18 @@
               <span class="menu-icon">
                 <i class="mdi mdi-file-document-box"></i>
               </span>
-              <span class="menu-title">View Transfers</span>
+              <span class="menu-title">View Transactions</span>
             </a>
           </li>
 
-          <li class="nav-item menu-items">
+          <!-- <li class="nav-item menu-items">
             <a class="nav-link" href="{{url('forum')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-file-document-box"></i>
               </span>
               <span class="menu-title">Forum</span>
             </a>
-          </li>
+          </li> -->
 
           <li class="nav-item menu-items">
             <a class="nav-link" href="{{url('forum')}}">

@@ -10,6 +10,9 @@ use App\Http\Controllers\WithdrawController;
 
 use App\Http\Controllers\ProfileController;
 
+use App\Http\Controllers\TransactionController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -53,6 +56,11 @@ Route::get('/withdraw_request',[WithdrawController::class,'withdrawRequest']);
 Route::get('/cancel_withdraw/{id}',[WithdrawController::class,'cancel_withdraw']);
 
 // Withdraw Routes End Here
+
+
+// Transaction Routes Start Here
+
+Route::get('/transaction',[TransactionController::class,'transaction']);
 
 
 // Profile routes Start Here

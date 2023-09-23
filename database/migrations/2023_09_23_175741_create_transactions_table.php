@@ -11,16 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('transaction', function (Blueprint $table) {
+        Schema::create('transactions', function (Blueprint $table) {
             $table->id('sender_wallet_id');
+            $table->string('account_username');
             $table->decimal('amount');
             $table->string('curreny');
             $table->string('bank');
             $table->string('reciver_id');
-            $table->enum('status', ['pending', 'completed', 'failed'])->default('pending');
+            $table->string('status');
             $table->timestamps();
-
-          });
+        });
     }
 
     /**
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('transaction');
+        Schema::dropIfExists('transactions');
     }
 };

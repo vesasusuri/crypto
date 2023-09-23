@@ -62,6 +62,11 @@ Route::get('/cancel_withdraw/{id}',[WithdrawController::class,'cancel_withdraw']
 
 Route::get('/transaction',[TransactionController::class,'transaction']);
 
+Route::post('/uploadTransaction',[TransactionController::class,'uploadTransactions']);
+
+Route::get('/showTransaction',[TransactionController::class,'showTransaction']);
+
+//Transaction Routes End Here
 
 // Profile routes Start Here
 Route::get('/profile',[ProfileController::class,'profile']);
@@ -71,3 +76,4 @@ Route::get('/showProfile',[ProfileController::class,'showProfile']);
 Route::get('/dashboard',[AdminController::class,'dashboard']);
 
 Auth::routes();
+
